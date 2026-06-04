@@ -10,6 +10,8 @@ public abstract class Profesional implements Bonificable{
 
     @Override
     public void calcularPlusSalarial(double salarioBase, double salarioFinal) {
-        System.out.println("El profesional tiene un salario fijo siempre" );
+        if (salarioBase <= 10000){
+            System.out.println("El profesional tiene un salario fijo siempre, que es de " +salarioFinal );
+        }
     }
 }
