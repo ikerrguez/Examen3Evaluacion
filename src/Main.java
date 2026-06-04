@@ -21,15 +21,31 @@ public class Main {
                         String posicion = sc.next();
 
                         if (salarioBase >= 10000) {
-                            throw new PresupuestoExcedidoException("El fichaje se está cancelando. Salario excedido");
+                            System.err.println("El fichaje se está cancelando. Salario excedido");
                     }
                         return;
                         case 2:
-                            
-                }
+                            System.out.println("Contratando cuerpo técnico");
+                            System.out.println("Dime su nombre: ");
+                            String nombreCuerpo = sc.next();
+                            System.out.println("Cuanto cobra de salario base?");
+                            double salarioBaseCuerpo = sc.nextDouble();
+                            System.out.println("¿Qué función realiza?");
+                            String posicionCuerpo = sc.next();
 
+                            if (salarioBaseCuerpo >= 10000) {
+                                System.err.println("No se puede comprar este cuerpo técnico, no hay dinero suficiente");
+                            }
+                            return;
 
+                            case 3:
+                                System.out.println("Depidiendo a profesional...");
+                                System.out.println("Dime su nombre: ");
+                                String nombreProfesional = sc.next();
 
+                                
+                    }
+                    return;
 
 
             }catch(Exception e){
@@ -37,9 +53,11 @@ public class Main {
 
 
 
+
             }
 
         }while (!continuar);
+
 
     }
 }
