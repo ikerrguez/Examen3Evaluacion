@@ -8,6 +8,9 @@ public class GestorClub {
 
     public GestorClub(ArrayList<Profesional> jugadoresytecnicos) {
         this.jugadoresytecnicos = new ArrayList<>();
+        for (Profesional p : jugadoresytecnicos) {
+            this.jugadoresytecnicos.add(p);
+        }
     }
 
 
