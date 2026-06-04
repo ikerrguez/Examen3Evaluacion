@@ -1,10 +1,10 @@
 public class Jugador extends Profesional implements Bonificable {
     private Posicion posicion;
 
-    public Jugador(String nombre, double salarioBase) {
+    public Jugador(String nombre, double salarioBase, Posicion posicion) {
         super(nombre, salarioBase);
+        this.posicion = posicion;
     }
-
 
     @Override
     public void calcularPlusSalarial(double salarioBase, double salarioFinal) {

@@ -10,6 +10,9 @@ public class GestorClub {
         this.jugadoresytecnicos = new ArrayList<>();
     }
 
-    static void main() {
-    }
+
+
+
+
+
 }
